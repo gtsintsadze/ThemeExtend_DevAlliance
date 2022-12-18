@@ -1,0 +1,34 @@
+.sections.nav-sections {
+  background-color: white;
+}
+.sections.nav-sections .nav-sections-item-content > .navigation {
+  top: -8px;
+  letter-spacing: 1px;
+  line-height: 19px;
+  color: #3f3f3f;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "PT Sans", serif;
+  background-color: white;
+  display: block;
+  direction: rtl;
+  right: 31px;
+}
+.page-header .header.panel > .header.links {
+  direction: rtl;
+  float: left;
+}
+.page-header .header.panel > .header.links .delivery,
+.page-header .header.panel > .header.links .free-gift,
+.page-header .header.panel > .header.links .secure-shopping-content {
+  display: inline-block;
+}
+.page-header .header.panel > .header.links .delivery a:visited,
+.page-header .header.panel > .header.links .free-gift a:visited,
+.page-header .header.panel > .header.links .secure-shopping-content a:visited {
+  color: black;
+}
+.page-header .panel.wrapper {
+  background-color: white;
+}
+/*# sourceMappingURL=_my_header.css.map */

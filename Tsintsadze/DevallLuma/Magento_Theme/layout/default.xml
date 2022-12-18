@@ -1,0 +1,181 @@
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <referenceContainer name="page.top">
+        <block class="Magento\Framework\View\Element\Template" name="Navigation" template="Magento_Theme::Navigation.phtml"/>
+    </referenceContainer>
+    <move element="navigation.sections" destination="header-wrapper"/>
+    <move element="minicart" destination="header.panel" />
+    <referenceBlock name="register-link">
+        <arguments>
+            <argument name="label" xsi:type="string" translate="true">Register</argument>
+        </arguments>
+    </referenceBlock>
+    <referenceBlock name="header.links">
+        <block class="Magento\Framework\View\Element\Html\Link" name="my-link2">
+            <arguments>
+                <argument name="label" xsi:type="string" translate="true">My Wishlist</argument>
+                <argument name="path" xsi:type="string" translate="true">wishlist</argument>
+            </arguments>
+        </block>
+        <block class="Magento\Framework\View\Element\Html\Link" name="my-link1">
+            <arguments>
+                <argument name="label" xsi:type="string" translate="true">Checkout</argument>
+                <argument name="path" xsi:type="string">checkout</argument>
+            </arguments>
+        </block>
+    </referenceBlock>
+    <move element="form.subscribe" destination="page.wrapper" before="footer-container" />
+    <referenceBlock name="copyright" remove="true"/>
+    <referenceBlock name="footer_links" remove="true"/>
+    <referenceContainer name="footer">
+            <block class="Magento\Framework\View\Element\Html\Links" name="allcssandhead">
+                <block class="Magento\Framework\View\Element\Text" name="footer_links_title" before="-">
+                    <arguments>
+                        <argument translate="true" name="text" xsi:type="string">
+                            <![CDATA[<h3>More in this store</h3>]]>
+                        </argument>
+                    </arguments>
+                </block>
+                <arguments>
+                    <argument name="css_class" xsi:type="string">footer class</argument>
+                </arguments>
+                <block class="Magento\Framework\View\Element\Html\Link" name="2custom-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">My account</argument>
+                        <argument name="path" xsi:type="string">customer/account</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link" name="Personal-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">Personal Information</argument>
+                        <argument name="path" xsi:type="string">customer/account</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link" name="Payment-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">Payment Methods</argument>
+                        <argument name="path" xsi:type="string">customer/account</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link" name="Orders-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">Orders History</argument>
+                        <argument name="path" xsi:type="string">customer/account</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link" name="Options-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">Payment Options</argument>
+                        <argument name="path" xsi:type="string">customer/account</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link" name="Discount-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">Discount</argument>
+                        <argument name="path" xsi:type="string">customer/account</argument>
+                    </arguments>
+                </block>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Links" name="alibaba">
+                <block class="Magento\Framework\View\Element\Text" name="footer_title" before="-">
+                    <arguments>
+                        <argument translate="true" name="text" xsi:type="string">
+                            <![CDATA[<h3>Customer Service</h3>]]>
+                        </argument>
+                    </arguments>
+                </block>
+                <arguments>
+                    <argument name="css_class" xsi:type="string">footer class2</argument>
+                </arguments>
+                <block class="Magento\Framework\View\Element\Html\Link" name="Help-color">
+                    <arguments>
+                        <argument name="label" xsi:type="string">Help and Contact</argument>
+                        <argument name="path" xsi:type="string">#</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link" name="Ship-color">
+                    <arguments>
+                        <argument name="label" xsi:type="string">Shipping and taxes</argument>
+                        <argument name="path" xsi:type="string">#</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link" name="Policy-color">
+                    <arguments>
+                        <argument name="label" xsi:type="string">Return Policy</argument>
+                        <argument name="path" xsi:type="string">#</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link" name="Policy-color">
+                    <arguments>
+                        <argument name="label" xsi:type="string">Privacy Policy</argument>
+                        <argument name="path" xsi:type="string">#</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link" name="newW-color">
+                    <arguments>
+                        <argument name="label" xsi:type="string">What's new</argument>
+                        <argument name="path" xsi:type="string">#</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link" name="Affiliates-color">
+                    <arguments>
+                        <argument name="label" xsi:type="string">Affiliates</argument>
+                        <argument name="path" xsi:type="string">customer/account</argument>
+                    </arguments>
+                </block>
+            </block>
+            <block class="Magento\Framework\View\Element\Template" name="Footer" template="Magento_Theme::footer/Footer.phtml" />
+        <block class="Magento\Framework\View\Element\Html\Links" name="thor">
+            <block class="Magento\Framework\View\Element\Text" name="thor_title" before="-">
+                <arguments>
+                    <argument translate="true" name="text" xsi:type="string">
+                        <![CDATA[<h3>Information</h3>]]>
+                    </argument>
+                </arguments>
+            </block>
+            <arguments>
+                <argument name="css_class" xsi:type="string">footer class2</argument>
+            </arguments>
+            <block class="Magento\Framework\View\Element\Html\Link" name="ProductNew-color">
+                <arguments>
+                    <argument name="label" xsi:type="string">New Products</argument>
+                    <argument name="path" xsi:type="string">#</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link" name="Sellers-color">
+                <arguments>
+                    <argument name="label" xsi:type="string">Top Sellers</argument>
+                    <argument name="path" xsi:type="string">#</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link" name="Specials-color">
+                <arguments>
+                    <argument name="label" xsi:type="string">Specials Products</argument>
+                    <argument name="path" xsi:type="string">#</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link" name="manufacturers-color">
+                <arguments>
+                    <argument name="label" xsi:type="string">manufacturers</argument>
+                    <argument name="path" xsi:type="string">#</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link" name="Suppliersa-color">
+                <arguments>
+                    <argument name="label" xsi:type="string">Suppliers</argument>
+                    <argument name="path" xsi:type="string">#</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link" name="offertoday-color">
+                <arguments>
+                    <argument name="label" xsi:type="string">Today Offers</argument>
+                    <argument name="path" xsi:type="string">#</argument>
+                </arguments>
+            </block>
+        </block>
+        <block class="Magento\Framework\View\Element\Template" name="instagram_footer" template="Magento_Theme::footer/instagram_footer.phtml" />
+        <block class="Magento\Framework\View\Element\Template" name="pay" template="Magento_Theme::footer/pay.phtml" />
+    </referenceContainer>
+</page>
+
+
+

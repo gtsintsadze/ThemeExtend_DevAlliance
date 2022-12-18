@@ -1,0 +1,95 @@
+.sections {
+    &.nav-sections {
+        background-color: white;
+
+        .nav-sections-item-content {
+            > .navigation {
+                top: -8px;
+                letter-spacing: 1px;
+                line-height: 19px;
+                color: #3f3f3f;
+                font-weight: 700;
+                font-size: 16px;
+                font-family: "PT Sans", serif;
+                background-color: white;
+                display: block;
+                direction: rtl;
+                right: 31px;
+            }
+        }
+    }
+}
+
+.page-header {
+    .header {
+        &.panel {
+            > .header {
+                &.links {
+                    direction: rtl;
+                    float: left;
+
+                    > li > a {
+                        color: black;
+                    }
+
+                    .delivery, .free-gift, .secure-shopping-content {
+                        display: inline-block;
+
+                        a {
+                            &:visited {
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .panel {
+        &.wrapper {
+            background-color: white;
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+    .sections {
+        &.nav-sections {
+            .nav-sections-item-content {
+                > .navigation {
+                    top: -8px;
+                    letter-spacing: 1px;
+                    line-height: 19px;
+                    color: #3f3f3f;
+                    font-weight: 700;
+                    font-size: 16px;
+                    font-family: "PT Sans", serif;
+                    background-color: white;
+                    direction: ltr;
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .sections {
+        &.nav-sections {
+            .nav-sections-item-content {
+                > .navigation {
+                    top: -8px;
+                    letter-spacing: 1px;
+                    line-height: 19px;
+                    color: #3f3f3f;
+                    font-weight: 700;
+                    font-size: 16px;
+                    font-family: "PT Sans", serif;
+                    background-color: white;
+                    direction: ltr;
+
+                }
+            }
+        }
+    }
+}

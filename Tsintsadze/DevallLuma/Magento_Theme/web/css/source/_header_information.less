@@ -1,0 +1,48 @@
+.main-content-tsintsadze {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: @light_green;
+    justify-content: space-evenly;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    .delivery, .free-gift, .secure-shopping-content {
+        display: flex;
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 0.5%;
+        text-decoration: none;
+        justify-content: center;
+
+        .images {
+            width: 7%;
+            margin-right: 15px;
+        }
+
+        .free-delivery, .gifts, .secure-shopping {
+            display: grid;
+
+            .free-delivery-label, .gift-label, .secure-shopping-label {
+                font-size: 12px;
+                letter-spacing: 1px;
+                line-height: 17px;
+                text-transform: uppercase;
+                color: #ffffff;
+                font-weight: 700;
+                font-family: "PT Sans", serif;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .main-content-tsintsadze, .delivery, .free-gift, .secure-shopping-content, label, .page-bottom {
+        width: 100%;
+        height: 100%;
+    }
+}

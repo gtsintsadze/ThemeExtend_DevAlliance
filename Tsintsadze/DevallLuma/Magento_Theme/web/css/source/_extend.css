@@ -1,0 +1,311 @@
+.page-wrapper .sections.nav-sections {
+  background-color: white;
+}
+.page-wrapper .sections.nav-sections .nav-sections-item-content > .navigation {
+  top: -8px;
+  letter-spacing: 1px;
+  line-height: 19px;
+  color: #3f3f3f;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "PT Sans", serif;
+  background-color: white;
+  display: block;
+  direction: rtl;
+  right: 31px;
+}
+.page-wrapper .page-header .header.panel > .header.links {
+  direction: rtl;
+  float: left;
+}
+.page-wrapper .page-header .header.panel > .header.links > li > a {
+  color: black;
+}
+.page-wrapper .page-header .header.panel > .header.links .delivery,
+.page-wrapper .page-header .header.panel > .header.links .free-gift,
+.page-wrapper .page-header .header.panel > .header.links .secure-shopping-content {
+  display: inline-block;
+}
+.page-wrapper .page-header .header.panel > .header.links .delivery a:visited,
+.page-wrapper .page-header .header.panel > .header.links .free-gift a:visited,
+.page-wrapper .page-header .header.panel > .header.links .secure-shopping-content a:visited {
+  color: black;
+}
+.page-wrapper .page-header .panel.wrapper {
+  background-color: white;
+}
+.page-wrapper .main-content-tsintsadze {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #7bae23;
+  justify-content: space-evenly;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.page-wrapper .main-content-tsintsadze .delivery,
+.page-wrapper .main-content-tsintsadze .free-gift,
+.page-wrapper .main-content-tsintsadze .secure-shopping-content {
+  display: flex;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 0.5%;
+  text-decoration: none;
+  justify-content: center;
+}
+.page-wrapper .main-content-tsintsadze .delivery .images,
+.page-wrapper .main-content-tsintsadze .free-gift .images,
+.page-wrapper .main-content-tsintsadze .secure-shopping-content .images {
+  width: 7%;
+  margin-right: 15px;
+}
+.page-wrapper .main-content-tsintsadze .delivery .free-delivery,
+.page-wrapper .main-content-tsintsadze .free-gift .free-delivery,
+.page-wrapper .main-content-tsintsadze .secure-shopping-content .free-delivery,
+.page-wrapper .main-content-tsintsadze .delivery .gifts,
+.page-wrapper .main-content-tsintsadze .free-gift .gifts,
+.page-wrapper .main-content-tsintsadze .secure-shopping-content .gifts,
+.page-wrapper .main-content-tsintsadze .delivery .secure-shopping,
+.page-wrapper .main-content-tsintsadze .free-gift .secure-shopping,
+.page-wrapper .main-content-tsintsadze .secure-shopping-content .secure-shopping {
+  display: grid;
+}
+.page-wrapper .main-content-tsintsadze .delivery .free-delivery .free-delivery-label,
+.page-wrapper .main-content-tsintsadze .free-gift .free-delivery .free-delivery-label,
+.page-wrapper .main-content-tsintsadze .secure-shopping-content .free-delivery .free-delivery-label,
+.page-wrapper .main-content-tsintsadze .delivery .gifts .free-delivery-label,
+.page-wrapper .main-content-tsintsadze .free-gift .gifts .free-delivery-label,
+.page-wrapper .main-content-tsintsadze .secure-shopping-content .gifts .free-delivery-label,
+.page-wrapper .main-content-tsintsadze .delivery .secure-shopping .free-delivery-label,
+.page-wrapper .main-content-tsintsadze .free-gift .secure-shopping .free-delivery-label,
+.page-wrapper .main-content-tsintsadze .secure-shopping-content .secure-shopping .free-delivery-label,
+.page-wrapper .main-content-tsintsadze .delivery .free-delivery .gift-label,
+.page-wrapper .main-content-tsintsadze .free-gift .free-delivery .gift-label,
+.page-wrapper .main-content-tsintsadze .secure-shopping-content .free-delivery .gift-label,
+.page-wrapper .main-content-tsintsadze .delivery .gifts .gift-label,
+.page-wrapper .main-content-tsintsadze .free-gift .gifts .gift-label,
+.page-wrapper .main-content-tsintsadze .secure-shopping-content .gifts .gift-label,
+.page-wrapper .main-content-tsintsadze .delivery .secure-shopping .gift-label,
+.page-wrapper .main-content-tsintsadze .free-gift .secure-shopping .gift-label,
+.page-wrapper .main-content-tsintsadze .secure-shopping-content .secure-shopping .gift-label,
+.page-wrapper .main-content-tsintsadze .delivery .free-delivery .secure-shopping-label,
+.page-wrapper .main-content-tsintsadze .free-gift .free-delivery .secure-shopping-label,
+.page-wrapper .main-content-tsintsadze .secure-shopping-content .free-delivery .secure-shopping-label,
+.page-wrapper .main-content-tsintsadze .delivery .gifts .secure-shopping-label,
+.page-wrapper .main-content-tsintsadze .free-gift .gifts .secure-shopping-label,
+.page-wrapper .main-content-tsintsadze .secure-shopping-content .gifts .secure-shopping-label,
+.page-wrapper .main-content-tsintsadze .delivery .secure-shopping .secure-shopping-label,
+.page-wrapper .main-content-tsintsadze .free-gift .secure-shopping .secure-shopping-label,
+.page-wrapper .main-content-tsintsadze .secure-shopping-content .secure-shopping .secure-shopping-label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "PT Sans", serif;
+  text-align: center;
+}
+.page-wrapper .control [type=text] {
+  width: 30px;
+  float: right;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 2px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 10px 10px 13px 20px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+.page-wrapper .control [type=text]:focus {
+  width: 50%;
+}
+.page-wrapper .block-search {
+  width: 0;
+}
+.page-wrapper .minicart-wrapper {
+  left: 0%;
+}
+.page-wrapper .minicart-wrapper .action.showcart .counter.qty {
+  border-radius: 50%;
+  background-color: #7bae23;
+}
+.page-wrapper #switcher-currency {
+  color: black;
+  transform: translateX(-50%);
+}
+.page-wrapper #switcher-language-trigger {
+  color: black;
+  transform: translateX(-105%);
+}
+.page-wrapper li.greet.welcome {
+  display: none;
+}
+.page-wrapper .page-bottom {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  background-color: #7bae23;
+  padding: 10px 0 0 0;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+.page-wrapper .page-bottom .newsletter-info,
+.page-wrapper .page-bottom .newsletter {
+  display: flex;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 0.5%;
+  text-decoration: none;
+  justify-content: center;
+  margin: 0 5px 0 0;
+}
+.page-wrapper .page-bottom .newsletter-info {
+  margin-right: 10%;
+}
+.page-wrapper .page-bottom .newsletter-info .img {
+  width: 7%;
+  margin-right: 1rem;
+}
+.page-wrapper .page-bottom .newsletter-info h3 {
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "PT Sans", serif;
+  text-align: center;
+}
+.page-wrapper .page-bottom .newsletter-info h3,
+.page-wrapper .page-bottom .newsletter-info p {
+  color: white;
+  margin: 0;
+}
+.page-wrapper .page-bottom .block.newsletter {
+  margin-bottom: 0;
+}
+.page-wrapper .page-bottom .block.newsletter input {
+  border-radius: 20px 0 0 20px;
+  height: 40px;
+}
+.page-wrapper .page-bottom .block.newsletter .actions .subscribe {
+  background-color: #669c08;
+  border-color: #669c08;
+  border-radius: 0 20px 20px 0;
+  height: 40px;
+}
+.page-wrapper .page-bottom .block.newsletter .field {
+  margin: 0;
+}
+.page-wrapper .page-bottom .block.newsletter .field .control:before {
+  content: none;
+}
+.page-wrapper .page-footer {
+  min-height: 396px;
+  background-color: #2c2c2f;
+}
+.page-wrapper .page-footer .footer.content {
+  display: flex;
+}
+.page-wrapper .page-footer .footer.content .payments {
+  position: absolute;
+  top: 87%;
+  justify-content: space-between;
+  display: flex;
+  align-items: end;
+  width: 45%;
+}
+.page-wrapper .page-footer .footer.content .payments .payment-info {
+  color: white;
+}
+.page-wrapper .page-footer .footer.content .payments .payment-methods {
+  width: 15%;
+  display: flex;
+  padding-bottom: 16px;
+}
+.page-wrapper .page-footer .footer.content .contact-main-content {
+  width: 157px;
+  padding-right: 50px;
+  color: white;
+}
+.page-wrapper .page-footer .footer.content .contact-main-content .phone-number,
+.page-wrapper .page-footer .footer.content .contact-main-content .emails,
+.page-wrapper .page-footer .footer.content .contact-main-content .contact-skype {
+  display: flex;
+}
+.page-wrapper .page-footer .footer.content .contact-main-content .phone-number .images,
+.page-wrapper .page-footer .footer.content .contact-main-content .emails .images,
+.page-wrapper .page-footer .footer.content .contact-main-content .contact-skype .images {
+  width: 15%;
+  margin: 0 15px 0 0;
+}
+.page-wrapper .page-footer .footer.content .footer.class {
+  display: grid;
+}
+.page-wrapper .page-footer .footer.content .footer.class h3 {
+  color: white;
+}
+.page-wrapper .page-footer .footer.content .footer.class li {
+  margin: 0 0 5px 0;
+}
+.page-wrapper .page-footer .footer.content .footer.class li > a {
+  color: white;
+}
+.page-wrapper .page-footer .footer.content .footer.class2 {
+  display: grid;
+}
+.page-wrapper .page-footer .footer.content .footer.class2 h3 {
+  color: white;
+}
+.page-wrapper .page-footer .footer.content .footer.class2 .delivery,
+.page-wrapper .page-footer .footer.content .footer.class2 .free-gift,
+.page-wrapper .page-footer .footer.content .footer.class2 .secure-shopping-content {
+  margin: 0 0 5px 0;
+}
+.page-wrapper .page-footer .footer.content .footer.class2 .delivery > a,
+.page-wrapper .page-footer .footer.content .footer.class2 .free-gift > a,
+.page-wrapper .page-footer .footer.content .footer.class2 .secure-shopping-content > a {
+  color: white;
+}
+@media (max-width: 768px) {
+  .page-wrapper .minicart-wrapper {
+    left: 0;
+  }
+}
+@media (max-width: 600px) {
+  .page-wrapper .main-content-tsintsadze,
+  .page-wrapper .page-bottom {
+    display: block;
+  }
+  .page-wrapper .main-content-tsintsadze .delivery,
+  .page-wrapper .page-bottom .delivery,
+  .page-wrapper .main-content-tsintsadze .free-gift,
+  .page-wrapper .page-bottom .free-gift,
+  .page-wrapper .main-content-tsintsadze .secure-shopping-content,
+  .page-wrapper .page-bottom .secure-shopping-content {
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .page-wrapper .minicart-wrapper {
+    left: 0;
+  }
+  .page-wrapper .page-bottom {
+    display: block;
+  }
+}
+/*# sourceMappingURL=_extend.css.map */
