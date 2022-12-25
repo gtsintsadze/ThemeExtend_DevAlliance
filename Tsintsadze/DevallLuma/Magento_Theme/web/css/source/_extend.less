@@ -6,39 +6,25 @@
     @import "_my_header";
     @import "_header_information";
 
-    .control [type=text] {
-        width: 30px;
-        float: right;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 2px;
-        font-size: 16px;
-        background-color: white;
-        background-position: 10px 10px;
-        background-repeat: no-repeat;
-        padding: 10px 10px 13px 20px;
-        -webkit-transition: width 0.4s ease-in-out;
-        transition: width 0.4s ease-in-out;
-    }
-
-    .control [type=text]:focus {
-        width: 50%;
-    }
-
-    .block-search {
-        width: 0;
-    }
+    //.control [type=text]:focus {
+    //    width: 50%;
+    //}
 
     .minicart-wrapper {
-        left: 0%;
+        left: 0;
+
         .action {
             &.showcart {
-                .counter {
-                    &.qty {
-                        border-radius: 50%;
-                        background-color: @light_green;
-                    }
+                .cart-text {
+                    display: none;
                 }
+
+                //.counter {
+                //    &.qty {
+                //        border-radius: 50%;
+                //        background-color: @light_green;
+                //    }
+                //}
             }
         }
     }
@@ -142,6 +128,21 @@
     @media (max-width: 768px) {
         .minicart-wrapper {
             left: 0;
+
+            .action {
+                &.showcart {
+                    .counter {
+                        &.qty {
+                            border-radius: 50%;
+                            background-color: @light_green;
+
+                            .counter-text {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -149,12 +150,16 @@
         .main-content-tsintsadze, .page-bottom {
             display: block;
 
+            li:nth-child(-n + 2) {
+                border-bottom: 2px solid white;
+            }
+
             .delivery, .free-gift, .secure-shopping-content {
-                border: 2px solid white;
                 width: 100%;
                 height: 100%;
                 display: flex;
                 justify-content: flex-start;
+                padding-left: 20px;
             }
         }
 
@@ -163,7 +168,10 @@
         }
 
         .page-bottom{
-            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 15px 0 15px 0;
         }
     }
 }

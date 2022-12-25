@@ -82,27 +82,14 @@
 }
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
-    .page-footer {
-        margin: 0;
-        height: 1200px;
 
-        .footer {
-            &.content {
-                display: block;
-
-                .payments {
-                    display: block;
-                    top: auto;
-                }
-            }
-        }
-    }
 }
 
-.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+@media only screen and (max-width: 768px) {
     .page-footer {
         margin: 0;
         height: 1200px;
+
         .footer {
             &.content {
                 display: block;
