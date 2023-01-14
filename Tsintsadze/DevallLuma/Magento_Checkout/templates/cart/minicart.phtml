@@ -13,7 +13,7 @@
                 (getCartParam('summary_count') ? getCartParam('summary_count') : '0')
                 --><!-- /ko -->
                 <span class="counter-text">
-                    <!-- ko text: ' item(s)' + ' - ' + /(\$.*)</gm.exec(getCartParam('subtotal'))[1] --><!-- /ko -->
+                    <!-- ko text: ' item(s)' + ' - ' + (getCartParam('subtotal') != 'undefined' ? /(\$.*)</gm.exec(getCartParam('subtotal'))[1] : '$0.00') --><!-- /ko -->
                 </span>
             </span>
             <span class="counter-label">
@@ -66,4 +66,5 @@
     }
     </script>
 </div>
+
 

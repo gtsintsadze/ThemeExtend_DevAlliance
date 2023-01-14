@@ -1,4 +1,7 @@
 <page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <referenceContainer name="header-wrapper">
+        <block name="mobile.header.links" class="Magento\Framework\View\Element\Template" template="Magento_Theme::mobile_links.phtml" after="logo"/>
+    </referenceContainer>
     <referenceContainer name="page.top">
         <block class="Magento\Framework\View\Element\Template" name="Navigation" template="Magento_Theme::Navigation.phtml"/>
     </referenceContainer>

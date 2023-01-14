@@ -1,9 +1,13 @@
+.mobile-links {
+    display: none;
+}
+
 .main-content-tsintsadze {
     list-style-type: none;
     margin: 0;
     overflow: hidden;
     background-color: @light_green;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 0;
     width: 100%;
     height: 100%;
@@ -40,9 +44,46 @@
     }
 }
 
+form {
+    &.minisearch {
+        .control {
+            display: flex;
+            align-items: center;
+
+            .nav-toggle {
+                position: unset;
+            }
+        }
+    }
+}
+
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
     .main-content-tsintsadze, .delivery, .free-gift, .secure-shopping-content, label, .page-bottom {
         width: 100%;
         height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-links {
+        display: flex;
+        justify-content: space-evenly;
+
+        .login, .wishlist {
+            text-align: center;
+
+            .icon {
+                margin-right: 0;
+                height: 25px;
+            }
+        }
+
+        li {
+            list-style: none;
+
+            a {
+                font-size: 12px;
+            }
+        }
     }
 }
